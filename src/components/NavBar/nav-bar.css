@@ -1,0 +1,109 @@
+.nav-bar{
+    width: 90%;
+    margin: auto;
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.nav-button{
+    display: none;
+}
+.nav-bar-logo{
+    height: 70px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+    justify-content: start;
+}
+.nav-link{
+    width: 160px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-especial);
+}
+.nav-link:hover{
+    background-color: var(--color-texto-especial);
+    color: var(--color-secundario);
+}
+@media (max-width: 900px) {
+    .nav-bar{
+        width: 95%;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+@media (max-width: 750px) {
+    .nav-bar{
+        width: 97%;
+        gap: 30px;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+}
+@media (max-width: 700px) {
+    .nav-button{
+        display: block;
+    }
+    
+    .nav-bar{
+        width: 90%;
+        height: auto;
+        padding: 20px 0 ;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-80%);
+        transition: all 0.5s ease;
+    }
+    .nav-bar.nav-bar-open{
+        transform: translateY(0);
+    }
+    .nav-links{
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .nav-button{
+        width: 150px;
+        height: 40px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: var(--color-secundario);
+        color: var(--color-principal);
+        cursor: pointer;
+        border: 1px solid var(--color-texto-especial);
+    }
+    .nav-button:hover{
+        background-color: var(--color-texto-especial);
+        color: var(--color-secundario);
+    }
+    .nav-button svg{
+        width: 20px;
+        height: 20px;
+        transition: rotate 0.5s ease;
+    }
+    .nav-bar-open .nav-button svg{
+        rotate: 180deg;
+    }
+}

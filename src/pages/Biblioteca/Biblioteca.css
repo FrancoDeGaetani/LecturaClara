@@ -1,0 +1,65 @@
+
+.biblioteca-titulo{
+    text-align: center;
+    font-size: 45px;
+    font-family: Baskerville;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    border: 2px solid var(--color-principal);
+    border-radius: 5px;
+    margin-block: 0;
+    margin: 0px auto 30px auto;
+}
+.biblioteca{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.ver-mas-biblio{
+    width: 550px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Baskerville;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-principal);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.ver-mas-biblio:hover{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+@media (max-width: 1700px){
+    .biblioteca{
+        gap: 50px;
+    }
+}
+@media (max-width: 1050px){
+    .biblioteca{
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px){
+    .biblioteca{
+        margin-top: 100px;
+    }
+    .ver-mas-biblio{
+        width: 300px;
+    }
+}
+@media (max-width: 400px){
+    .ver-mas-biblio{
+        width: 100%;
+        font-size: 22px;
+    }
+}

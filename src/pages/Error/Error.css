@@ -1,0 +1,105 @@
+.error-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin: 140px auto ;
+}
+.error-container img{
+    width: 650px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid var(--color-principal);
+    border-right: none;
+}
+.error-container-text{
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-principal);
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.error-container-text :is(h1,p){
+    margin-block: 0;
+    text-align: center;
+}
+.error-container-text p {
+    font-size: 30px;
+    color: var(--color-texto);
+}
+.error-container-text a{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: Baskerville;
+    font-weight: bold;
+    text-decoration: none;
+}
+.error-container-text a:hover{
+    background-color: var(--color-texto-especial);
+    color: var(--color-secundario);
+}
+
+@media (max-width:1200px){
+    .error-container{
+        flex-direction: column;
+        width: 650px;
+        margin: 50px auto;
+    }
+    .error-container img{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom: none;
+        border-right: 2px solid var(--color-principal);
+        width: auto;
+    }
+    .error-container-text{
+        border-left: 2px solid var(--color-principal);
+        border-top: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 20px 0 20px 0;
+    }
+}
+@media (max-width:780px){
+    .error-container{
+        width: auto;
+    }
+}
+@media (max-width:700px){
+    .error-container{
+        flex-direction: column;
+        margin: 170px auto 120px auto;
+        padding: 30px;
+    }
+}
+@media (max-width:570px){
+    .error-container{
+        padding: 10px;
+        height: 50vh;
+        margin: 170px auto 100px auto;
+    }
+    .error-container-text p {
+        font-size: 30px;
+        color: var(--color-texto);
+        padding: 0 15px;
+    }
+}
+@media (max-width:380px){
+    .error-container{
+        padding: 10px;
+        margin: 140px auto 100px auto;
+    }
+}
+
+
