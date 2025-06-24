@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Baskerville;
+    src: url('../assets/fonts/Libre_Baskerville/Baskerville.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../src/assets/fonts/Lato/Lato-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-principal: #A31621;
+    --color-secundario: #F9EEE0;
+    --color-terciario: #FFF4E8;
+    --color-texto-especial: #555555;
+    --sombra: 0px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-secundario);
+    background-image: url('./assets/imgs/fondo.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+p{
+    text-wrap: pretty;;
+}

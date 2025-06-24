@@ -1,0 +1,138 @@
+.random-book-weekly-false, .random-book-weekly-true{
+    width: 80%;
+    height: 200px;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 35px auto;
+}
+.random-book-weekly-false{
+    padding-left: 70px;
+    background-color: var(--color-terciario);
+    box-shadow: var(--sombra);
+}
+.random-book-weekly-false-button, .random-book-weekly-true-button{
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Baskerville;
+}
+.random-book-weekly-false-button:hover, .random-book-weekly-true-button:hover{
+    background-color: var(--color-texto-especial);
+    color: var(--color-secundario);
+}
+.random-book-weekly-true{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 80%;
+    background-color: var(--color-terciario);
+    box-shadow: var(--sombra);
+}
+.random-book-weekly-false h2{
+    margin-bottom: 40px;
+    color: var(--color-texto-especial);
+    font-size: 35px;
+}
+.random-book-weekly-true h2{
+    color: var(--color-texto-especial);
+    font-size: 35px;
+    margin-block: 0;
+    margin-top:20px ;
+    max-width: 400px;
+}
+.random-book-weekly-true-info{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.random-book-weekly-true-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+    max-width: 400px;
+}
+.random-book-weekly-true-button{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: Baskerville;
+    font-weight: bold;
+    text-decoration: none;
+    width: 50%;
+}
+.random-book-weekly-true-info-text h3{
+    font-size: 24px;
+    max-width: 380px;
+}
+.random-book-weekly-true-info-text p{
+    font-size: 18px;
+}
+.random-book-weekly-true-info :is(h3, p){
+    margin-block: 0;
+}
+
+@media (max-width:1600px){
+    .random-book-weekly-true-info-text h3{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:1150px){
+    .random-book-weekly-false, .random-book-weekly-true{
+        width: 80%;
+        height: auto;
+    }
+    .random-book-weekly-true{
+        flex-direction: column;
+    }
+    .random-book-weekly-true h2{
+        color: var(--color-texto-especial);
+        font-size: 35px;
+        margin: 20px auto;
+        padding: 0 20px 30px 20px;
+        border-bottom: 2px solid var(--color-principal);
+    }
+}
+@media (max-width: 600px){
+    .random-book-weekly-false{
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .random-book-weekly-false, .random-book-weekly-true{
+        margin: 20px auto;
+        width: 75%;
+    }
+    .random-book-weekly-true-info {
+        flex-direction: column;
+    }
+    .random-book-weekly-true h2 {
+        margin: 10px auto;
+        font-size: 29px;
+    }
+    .random-book-weekly-true-info-text h3 {
+        font-size: 20px;
+    }
+    .random-book-weekly-true-info-image{
+        margin: auto;
+    }
+    .random-book-weekly-true-info-image img{
+        width: 200px;
+    }
+}
+@media (max-width: 450px){
+    .random-book-weekly-false h2{
+        font-size: 28px;
+    }
+}

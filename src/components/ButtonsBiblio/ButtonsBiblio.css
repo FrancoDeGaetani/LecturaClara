@@ -1,0 +1,56 @@
+
+.botones-biblioteca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top:2px solid var(--color-principal);
+    border-bottom: 2px solid var(--color-principal);
+    margin: 60px auto 20px auto;
+    width: 80%;
+    padding: 10px;
+}
+.agregar-biblioteca p{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-block: 0;
+}
+.botones-biblioteca button{
+    background-color: transparent;
+    border: 2px solid var(--color-principal);
+    color: black;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.botones-biblioteca button:hover{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+@media (max-width: 1200px) {
+    .botones-biblioteca{
+        gap: 5px;
+        width: 90%;
+    }
+    .botones-biblioteca button{
+        padding: 5px 10px;
+        font-size: 17px;
+    }
+}
+@media (max-width: 800px) {
+    .botones-biblioteca{
+        flex-direction: column;
+        padding: 25px 10px;
+    }
+    .botones-biblioteca button{
+        width: 80%;
+    }
+}
+@media (max-width: 400px) {
+    .botones-biblioteca button{
+        width: 100%;
+    }
+}

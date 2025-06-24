@@ -1,0 +1,49 @@
+
+.sidebar{
+    width: 380px;
+    height: 900px;
+    background-color: var(--color-terciario);
+    padding: 20px;
+    box-sizing: border-box;
+    border: 8px double var(--color-principal);
+    border-radius: 15px;
+}
+.sidebar h2{
+    margin: 10px auto;
+    font-family: Baskerville;
+    font-size: 30px;
+    text-wrap: pretty;
+}
+.filtros{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.filtros h3{
+    font-family: Baskerville;
+    font-size: 27px;
+    margin-block: 0;
+    margin: 10px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-bottom: 2px solid var(--color-principal);
+}
+
+@media (max-width:1050px){
+    .sidebar{
+        width: 100%;
+        height: auto;
+    }
+    .filtros{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .filtros h3{
+        font-family: Baskerville;
+        font-size: 27px;
+        margin: 0px;
+        padding: 0px;
+        border-bottom: none;
+    }
+}

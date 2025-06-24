@@ -1,0 +1,17 @@
+.label-biblio{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-left: 2px solid var(--color-principal);
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.label-biblio input:checked {
+    background-color: var(--color-principal);
+    border: 5px solid var(--color-principal);
+}

@@ -1,0 +1,13 @@
+
+
+.footer{
+    background-color:#A31621;
+    padding: 40px;
+}
+
+.footer-content p{
+    color: var(--color-terciario);
+}
+.social-media li a{
+    color: var(--color-terciario);
+}
